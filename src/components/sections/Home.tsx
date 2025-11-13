@@ -17,8 +17,8 @@ const Home = () => {
 
       {/* Contenido */}
   <motion.div
-    className="relative z-10 text-center max-w-3xl"
-    initial={{ opacity: 0, y: 60 }}
+    className="relative z-10 text-center max-w-3xl md:-ml-8 lg:-ml-16"
+    initial={{ opacity: 0, y: 50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 1 }}
   >
@@ -43,8 +43,6 @@ const Home = () => {
     {/* subtitulo */}
     <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-10">
       Tecnología | Experiencia de Usuario
-      <br />
-      Explora y descubre cómo transformamos ideas en realidades tecnológicas.
     </p>
   </motion.div>
     </section>

@@ -3,6 +3,8 @@ import { AnimatePresence, motion} from "framer-motion";
 import RadialMenu from "./RadialMenu";
 import Home from "./sections/Home";
 import ProjectsSimplified from "./sections/ProjectsSimplified";
+import ProjectDetailVR from "./sections/ProjectDetailVR";
+import ProjectDetailBlandy from "./sections/ProjectDetailBlandy";
 import Process from "./sections/Process";
 import Repository from "./sections/Repository";
 import Team from "./sections/Team";
@@ -27,6 +29,8 @@ const MainLayout = () => {
   const sections: Record<string, JSX.Element> = {
     home: <Home />,
     projects: <ProjectsSimplified />,
+    'project-vr': <ProjectDetailVR />,
+    'project-blandy': <ProjectDetailBlandy/>,
     process: (
       <Process activeStep={processStep} onStepChange={handleProcessStepChange} />
     ),
@@ -54,7 +58,7 @@ const MainLayout = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={activeSection}
-              initial={{ opacity: 0, x: 50 }}
+              initial={{ opacity: 0, x: 150 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
               transition={{ duration: 0.4 }}
