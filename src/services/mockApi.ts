@@ -142,7 +142,7 @@ const mockProjects: Project[] = [
         media: [
           { 
             type: 'youtube', 
-            src: 'https://youtu.be/A6aRkhlqWuE', 
+            src: 'https://youtu.be/aBeVzBqAhAw', 
             alt: 'Warren House - Producto Final' 
           }
         ],
@@ -219,7 +219,7 @@ const mockProjects: Project[] = [
         media: [
           { 
             type: 'youtube', 
-            src: 'https://www.youtube.com/watch?v=TU_VIDEO_ID_EVAL_BLANDY', 
+            src: 'https://youtu.be/Jzv9_W2zVuI', 
             alt: 'Evaluación de Usuarios - Blandy' 
           }
         ],
@@ -232,7 +232,7 @@ const mockProjects: Project[] = [
         media: [
           { 
             type: 'youtube', 
-            src: 'https://www.youtube.com/watch?v=TU_VIDEO_ID_FINAL_BLANDY', 
+            src: 'https://youtu.be/AiKOlDta7Dc', 
             alt: 'Blandy - Producto Final' 
           }
         ],
@@ -530,4 +530,5 @@ export const api = {
     
   getCompanySections: (): Promise<CompanySection[]> => 
     new Promise(resolve => setTimeout(() => resolve(mockCompanySections), 400)),
+
 };
